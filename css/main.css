@@ -1,0 +1,31 @@
+/*..........Global styles..........*/
+body {
+	font-family: 'PT Sans', sans-serif;
+}
+
+ul, li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+/*..........Header..........*/
+.main-header {
+  background: #fcdb00;
+  color: #010101;
+  padding-top: 58px;
+}
+
+header .menu {
+  margin-top: 10px;
+}
+
+.menu_item {
+  margin: 0 57px;
+}
+
+.menu_item a {
+  font-size: 22px;
+  font-weight: 700;
+  color: #000;
+}
