@@ -9,23 +9,77 @@ ul, li {
   margin: 0;
 }
 
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+  color: #000;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+h2 {
+  text-align: center;
+}
+
 /*..........Header..........*/
-.main-header {
+.main__header {
   background: #fcdb00;
   color: #010101;
   padding-top: 58px;
+  padding-bottom: 105px;
 }
 
 header .menu {
   margin-top: 10px;
 }
 
-.menu_item {
+.menu__item {
   margin: 0 57px;
 }
 
-.menu_item a {
+.menu__item a {
   font-size: 22px;
   font-weight: 700;
   color: #000;
+}
+
+.offer {
+  margin-top: 117px;
+}
+
+.offer__title {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.offer__intro {
+  font-size: 20px;
+  line-height: 1.3em;
+}
+
+.offer__text {
+  font-size: 16px;
+  margin-top: 15px;
+  width: 400px;
+}
+
+.icons__item {
+  margin-right: 30px;
+}
+
+.icons__item a {
+  color: #000;
+  font-size: 42px;
+  transition: all 0.3s ease;
+}
+
+.icons__item a:hover {
+  text-decoration: none;
+  color: #ff4800;
+}
+
+.ipad {
+  display: block;
+  margin: 60px auto 0;
 }
