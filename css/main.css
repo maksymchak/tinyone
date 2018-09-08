@@ -51,7 +51,7 @@ h2 {
 }
 
 header .menu {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .menu__item {
@@ -169,4 +169,50 @@ header .menu {
   width: 184px;
   margin: 0 auto;
   text-align: center;
+}
+
+/*..........Media queries..........*/
+@media screen and (max-width: 992px) {
+  .logo {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .offer {
+    text-align: center;
+  }
+  .offer__text {
+    margin: 20px auto;
+    width: auto;
+  }
+  .icons {
+    justify-content: center;
+  }
+  .icons__item:nth-child(3) {
+    margin-right: 0;
+  }
+  .form__input {
+    margin-right: 0;
+    width: 100%;
+  }
+  .form__btn {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .title__text {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .ipad {
+    width: 100%;
+  }
+  .menu {
+    flex-direction: column;
+  }
+  .menu__item {
+    text-align: center;
+    margin-bottom: 10px;
+  }
 }
