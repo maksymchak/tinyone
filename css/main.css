@@ -1,6 +1,8 @@
 /*..........Global styles..........*/
 body {
 	font-family: 'PT Sans', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 ul, li {
@@ -12,14 +14,6 @@ ul, li {
 h1, h2, h3, h4, h5 {
   font-weight: 700;
   color: #000;
-}
-
-h3 {
-  font-weight: 400;
-}
-
-h2 {
-  text-align: center;
 }
 
 .title {
@@ -38,10 +32,6 @@ h2 {
   margin: 0 auto;
 }
 
-.yellow {
-  color: #fcdb00;
-}
-
 /*..........Header..........*/
 .main__header {
   background: #fcdb00;
@@ -50,7 +40,7 @@ h2 {
   padding-bottom: 105px;
 }
 
-header .menu {
+.main__header ul {
   margin-top: 8px;
 }
 
@@ -62,6 +52,13 @@ header .menu {
   font-size: 22px;
   font-weight: 700;
   color: #000;
+  transition: all 0.3s ease;
+}
+
+.menu__item a:hover,
+.menu__item a:focus {
+  color: #ff4800;
+  text-decoration: none;
 }
 
 .offer {
@@ -94,7 +91,8 @@ header .menu {
   transition: all 0.3s ease;
 }
 
-.icons__item a:hover {
+.icons__item a:hover,
+.icons__item a:focus {
   text-decoration: none;
   color: #ff4800;
 }
@@ -105,13 +103,23 @@ header .menu {
 }
 
 /*..........Features..........*/
+.title h2 {
+  text-align: center; 
+}
+
 .feature {
   margin-bottom: 65px;
 }
 
+.feature h3 {
+  font-weight: 400;
+}
+
 .feature__icon {
-  font-size: 50px;
-  margin-right: 37px;
+  font-size: 35px;
+  margin-right: 20px;
+  width: 100px;
+  text-align: center;
   color: #000;
 }
 
@@ -123,6 +131,11 @@ header .menu {
 .touch {
   background: #010101;
   color: #fff;
+}
+
+.touch h2 {
+  text-align: center;
+  color: #fcdb00;
 }
 
 .form {
@@ -139,7 +152,6 @@ header .menu {
   margin-right:21px;
   border: 0;
   padding-left:23px;
-  outline: none;
 }
 
 .form__btn {
@@ -155,6 +167,13 @@ header .menu {
   padding: 14px 0;
   cursor: pointer;
   outline: none;
+  transition: all 0.8s ease;
+}
+
+.form__btn:hover,
+.form__btn:focus {
+  background: rgba(255, 110, 0, 0.6);
+  color: #ffffff;
 }
 
 /*..........Footer..........*/
@@ -176,7 +195,7 @@ header .menu {
   .logo {
     display: block;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   .offer {
     text-align: center;
@@ -205,14 +224,17 @@ header .menu {
 }
 
 @media screen and (max-width: 576px) {
+  .icons__item {
+    margin-right: 0;
+  }
   .ipad {
     width: 100%;
   }
-  .menu {
+  .main__header ul {
     flex-direction: column;
   }
   .menu__item {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 }
